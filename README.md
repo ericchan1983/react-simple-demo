@@ -4,7 +4,7 @@ A sample for building a simple demo with React and Flux
 # Lifecycle of React component
 The homework for React and Flux on StuQ
 
-componentWillMount:服务器端和客户端都只调用一次，在初始化渲染执行之前立刻调用
+componentWillMount: 服务器端和客户端都只调用一次，在初始化渲染执行之前立刻调用
 componentDidMount: 在初始化渲染执行之后立刻调用一次，仅客户端有效，服务器端不会调用
 componentWillReceiveProps: 在组件接收到新的 props 的时候调用。在初始化渲染的时候，该方法不会调用
 componentWillUpdate: 在接收到新的 props 或者 state 之前立刻调用。在初始化渲染的时候该方法不会被调用
