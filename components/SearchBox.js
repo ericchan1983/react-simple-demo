@@ -20,19 +20,25 @@ export default class SearchBox extends React.Component {
     handleChange(evt) {
         evt.preventDefault();
         this.setState({text: evt.target.value, showHint: false});
-        console.log("handle change");
+        if (console) {
+            console.log("handle Change");
+        }
     }
 
     handleKeyUp() {
         this.props.onFilter({
             filterStr: this.state.text
-        })
-        console.log("handle Keyup");
+        });
+        if (console) {
+            console.log("handle KeyUp");
+        }
     }
 
     handleFocus() {
         this.setState({text: this.state.showHint ? '' : this.state.text, showHint: false});
-        console.log("handle Focus");
+        if (console) {
+            console.log("handle Focus");
+        }
     }
 
     handleBlur() {
@@ -41,7 +47,9 @@ export default class SearchBox extends React.Component {
         } else {
             this.setState({text: this.state.text, showHint: false});
         }
-        console.log("handle Blur");
+        if (console) {
+            console.log("handle Blur");
+        }
     }
 
     componentDidMount() {
@@ -57,7 +65,7 @@ export default class SearchBox extends React.Component {
         }
     }
 
-    shouldComponentUpdate () {
+    shouldComponentUpdate (nextProps, nextState) {
         if (console) {
             console.log("Component should update.");
         }
@@ -70,7 +78,7 @@ export default class SearchBox extends React.Component {
         }
     }
 
-    componentWillReceiveProps () {
+    componentWillReceiveProps (nextProp) {
         if (console) {
             console.log("Component will receive props.");
         }
