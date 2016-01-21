@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2427d159-3480-491a-b428-290675dff117" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="react-simple-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -269,7 +268,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453392971159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix some style issue">
+      <created>1453393061433</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1453393061433</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
